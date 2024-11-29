@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* ------------CARA -------------- */
+
+.cara{
+    width: 600px;
+    height: 850px;
+    background: bisque;
+    border-radius: 200px 200px 300px 300px / 200px 200px 350px 350px;
+    margin: 0 auto;
+    top: 5px;
+}
+
+/* ------------CABELL -------------- */
+
+.cabell{
+    height: 200px;
+    background: black;
+    border-radius: 100px 0px 0px 0px;
+    
+}
+
+
+.cabell .mecha1{
+  width: 30px;
+  height:120px;
+  width: 120px;
+  border-radius: 50%;
+  background: ;
+  box-shadow: 0px -10px 0px black;
+  top: 174px;
+  left: 400px;
+  transform: rotate(30deg);
+}
+
+.cabell .mecha2{
+  width: 30px;
+  height:120px;
+  width: 120px;
+  border-radius: 50%;
+  background: ;
+  box-shadow: 0px -10px 0px black;
+  top: 40px;
+  left: 410px;
+  transform: rotate(30deg);
+}
+
+.cabell .mecha3{
+  width: 30px;
+  height:120px;
+  width: 120px;
+  border-radius: 50%;
+  background: ;
+  box-shadow: 0px -10px 0px black;
+  top: -90px;
+  left: 420px;
+  transform: rotate(30deg);
+}
+
+
+.cabell .laterales{
+    width: 600px;
+    height: 130px;
+    background: ;
+    text-align: center;
+    position: absolute;
+    top:0;
+    top: 150px;
+}
+
+.cabell .laterales .lateral{
+  height: 280px;
+    width: 58px;
+    background: black;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0px 0px;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.cabell .laterales .l1{
+  left: -240px;
+}
+
+.cabell .laterales .l2{
+  left: 240px;
+}
+
+/* ------------FRONT -------------- */
+
+.front{
+    height: 200px;
+    background: ;
+    
+}
+
+.front .celles{
+  border-top: 15px solid black;
+  border-left: 15px solid black;
+  border-radius:200% 5%;
+  width: 88px;
+  height: 105px;
+  top:110px;
+  left:38px;
+  transform: rotate(52deg);
+  display: inline-block;
+  margin: 10px 80px; 
+    
+}
+
+/* ------------ULLS -------------- */
+
+.mirada {
+    height: 70px;
+    background: ;
+    text-align: center;
+}
+
+.mirada .ull {
+    height: 50px;
+    width: 120px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 70px;
+    
+}
+
+.mirada .ull .pupila{
+    height: 50px;
+    width: 50px;
+    background: brown;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: radial-gradient(grey 0%, darkcyan 30%, darkslategrey 60%);
+    
+}
+
+.mirada .ull .iris{
+    height: 10px;
+    width: 10px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.parpella_sup{
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-radius:90% 8%;
+  width: 78px;
+  height: 95px;
+  top:-35px;
+  left:-15px;
+  transform: rotate(52deg);
+  z-index:16;
+}
+
+
+
+/* ------------ORELLES -------------- */
+
+.orelles{
+    width: 600px;
+    height: 130px;
+    background: ;
+    text-align: center;
+    position: absolute;
+    top:0;
+    top: 400px;
+    z-index: -2000;
+
+}
+
+.orelles .orella{
+    height: 150px;
+    width: 55px;
+    background: #f5d0b0;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0px 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.orelles .o1 {
+    left: -220px;
+    border-radius: 80% 20% 0% 100% / 100% 100% 0% 0%  ;
+    transform: rotate(-90deg);
+    z-index: 1;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+}
+.orelles .o2 {
+  left: 220px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20% 80% 0% 100% / 100% 100% 0% 0%;
+  transform: rotate(90deg);
+  z-index: 1;
+  top: 15px;
+}
+
+
+.orelles .o1::after{
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 25px;
+  background-color: bisque;
+  border-radius:80% 20% 0% 100% / 100% 100% 0% 0% ;
+  
+}
+
+.orelles .o2::after{
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 25px;
+  background-color: bisque;
+  border-radius:20% 80% 0% 100% / 100% 100% 0% 0% ;
+  
+}
+
+
+
+/* ------------GAFAS -------------- */
+
+.gafas{
+    width: 600px;
+    height: 140px;
+    background: ;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    opacity: 0.0;
+}
+
+.gafas:hover{
+  opacity: 0.7;
+}
+
+.gafas .gafa{
+    height: 150px;
+    width: 150px;
+    background: rgb(215,215,215);
+background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(92,92,92,1) 50%, rgba(0,0,0,1) 100%);
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0px 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.gafas .puente {
+  display: inline-block;
+  width: 30px;
+  height:120px;
+  width: 120px;
+  border-radius: 50%;
+  background: ;
+  box-shadow: 0px -10px 0px black;
+}
+
+
+.patilles{
+  width: 600px;
+    height: 130px;
+    background: ;
+    text-align: center;
+    position: absolute;
+    top:0;
+    top: 0px;
+    z-index: -2000;
+
+}
+
+.patilles .patilla{
+    height: 160px;
+    width: 2.5px;
+    background: black;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0px 0px;
+    left: 0px;
+    bottom: 0px;
+    
+}
+
+.patilles .pEsq {
+  left: -250px;
+  transform: rotate(135deg);
+  bottom: 40px;
+}
+.patilles .pDre {
+  left: 250px;
+  transform: rotate(45deg);
+  bottom: 40px;
+}
+
+
+/* ------------NAS -------------- */
+
+
+.nas{
+    height: 40px;
+    width: 50px;
+    margin-top: 90px;
+    margin-left: 275px;
+    border-radius: 10px;
+    border-bottom: solid 4px black;
+
+}
+
+
+/* ------------BOCA -------------- */
+
+.boca{
+  top: 20px;
+  left: 240px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100% 0 100% 0;
+  box-shadow: 3px 2px 2px #B689AF;
+  background: pink;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  top: -85px;
+  left: 286px;
+  width: 0; 
+  height: 0; 
+  border-top: 26px solid bisque;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
+
+.linia {
+  top: -66px;
+  left: 215px;
+  width: 170px;
+  height: 1.3px;
+  background-color: #B689AF;
+  opacity: 100%;
+}
+
+/* ------------COLL ------------- */
+
+
+
+.block{
+  height: 120px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.cuello{
+  background-color: #f5d0b0;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 0 0 400px 400px;
+}
+
+/* ------------ROPA ------------- */
+
+.chaqueta{
+  margin: 0 auto;
+  background-color: rgb(45, 65, 25);
+  height: 300px;
+  width: 900px;
+  border-radius: 200px 200px 0 0;
+  bottom: -50px;
+}
+
+
+.interior{
+  margin: auto;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  border-radius: 100px 100px 0 0;
+}
+
+.ropa{
+  bottom: 100px;
+  z-index: -99;
+}
+
+img{
+  height: 140px;
+  width: auto;
+  
+  top: 160px;
+  left: 5px;
+  display: inline-block;
+}
